@@ -11,6 +11,6 @@ module.exports.getdata = async () => {
     "https://vite-app-backend-ohxk.onrender.com/api/data",
     config
   );
-  console.log("json file : ", Details);
+  console.log("json data: ", Details);
   return Details;
 };
