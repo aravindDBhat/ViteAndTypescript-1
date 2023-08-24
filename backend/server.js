@@ -13,7 +13,7 @@ app.use(
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://vite-and-typescript-1.vercel.app",
+    origin: "https://vite-app-vx9z.onrender.com",
   })
 );
 
