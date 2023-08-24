@@ -13,12 +13,12 @@ app.use(
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://vite-and-typescript-1.vercel.app",
   })
 );
 
 app.use("/api/data", data);
 
-app.listen("3000", function () {
+app.listen(3000 | process.env.PORT, function () {
   console.log("Server is running on port 3000");
 });

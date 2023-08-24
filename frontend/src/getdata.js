@@ -7,7 +7,10 @@ module.exports.getdata = async () => {
       "Content-Type": "application/json",
     },
   };
-  const Details = await axios.get("http://localhost:3000/api/data", config);
+  const Details = await axios.get(
+    "https://vite-app-backend-ohxk.onrender.com/api/data",
+    config
+  );
   console.log("json file : ", Details);
   return Details;
 };

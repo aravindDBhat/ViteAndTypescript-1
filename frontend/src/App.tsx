@@ -67,7 +67,11 @@ function App() {
       },
     };
 
-    await axios.post("http://localhost:3000/api/data", payload, config);
+    await axios.post(
+      "https://vite-app-backend-ohxk.onrender.com/api/data",
+      payload,
+      config
+    );
 
     setEmail("");
     setName("");
